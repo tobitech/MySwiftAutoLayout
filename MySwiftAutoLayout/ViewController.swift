@@ -35,9 +35,6 @@ class ViewController: UIViewController {
         attributedText.append(NSAttributedString(string: "\n\n\nAre you ready for loads and loads of fun? Don't wait any longer! We hope to see you in our stores soon.", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14), NSAttributedStringKey.foregroundColor: UIColor.gray]))
         
         textView.attributedText = attributedText
-        
-//        textView.text = "Joing us today in our fun and games!"
-//        textView.font = UIFont.boldSystemFont(ofSize: 18)
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.textAlignment = .center
         textView.isEditable = false
@@ -92,7 +89,6 @@ class ViewController: UIViewController {
         view.addSubview(bottomControlsStackView)
         
         NSLayoutConstraint.activate([
-//            previousButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             bottomControlsStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             bottomControlsStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             bottomControlsStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
@@ -102,7 +98,6 @@ class ViewController: UIViewController {
     
     private func setupLayout() {
         let topImageContainerView = UIView()
-//        topImageContainerView.backgroundColor = .blue
         view.addSubview(topImageContainerView)
         
         topImageContainerView.translatesAutoresizingMaskIntoConstraints = false
